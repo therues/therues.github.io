@@ -1,20 +1,107 @@
 body {
-  padding-top: 65px;
+  padding-top: 50px;
   font-family: "rooney-sans", sans-serif;
   font-weight: 300;
-  color: #666;
+  color: lighten($brand-brown,10%);
 }
 
 .navbar-brand {
   font-weight: 700;
+  background: url(../i/theruesmark.svg) no-repeat 15px 50%;
+  background-size: auto 25px;
+  width: 200px;
+  @media (min-width: $screen-sm-min) {
+    background-position: 30px 50%;
+  }
+}
+
+.navbar-nav {
+  span.fa {
+    font-size: 0.7em;
+    margin-left: 3px;
+  }
+}
+
+.navbar-toggle {
+  color: $brand-orange;
 }
 
 .jumbotron {
   box-shadow: 0 0 15px rgba(0,0,0,0.25);
+  border-radius: 0;
   h1 {
     font-family: "abril-display", serif;
     border-bottom: 1px dotted black;
     margin-bottom: 0.5em;
     color: #900;
   }
+}
+
+.snipe {
+  $col: #31708f;
+  text-align: center;
+  margin-bottom: 2em;
+  span {
+    border-radius: 50%;
+    background-color: $col;
+    background-image: -webkit-radial-gradient(circle, lighten($col,40%), $col);
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 48px;
+    color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    text-shadow: 0 -2px 0 rgba(0,0,0,0.25);
+  }
+  p, blockquote {
+    text-align: left;
+  }
+  > p {
+    line-height: 1.7em;
+    margin-bottom: 1.5em;
+  }
+  blockquote {
+    color: $brand-brown;
+    font-family: "abril-display", serif;
+    footer {
+      color: $col;
+    }
+  }
+  &.snipe-red {
+    $col: #963;
+    span {
+      background-color: $col;
+      background-image: -webkit-radial-gradient(circle, lighten($col,10%), darken($col,10%));
+    }
+    blockquote {
+      footer {
+        color: $col;
+      }
+    }
+  }
+  &.snipe-green {
+    $col: #900;
+    span {
+      background-color: $col;
+      background-image: -webkit-radial-gradient(circle, lighten($col,10%), darken($col,10%));
+    }
+    blockquote {
+      footer {
+        color: $col;
+      }
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "abril-display", serif;
+  color: lighten($brand-brown,10%);
+}
+
+.text-white {
+  color: white;
 }

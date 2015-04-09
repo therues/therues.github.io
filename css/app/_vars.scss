@@ -1,2 +1,21 @@
 // custom vars and overrides for defaults for bootstrap
+
+// branding
+$brand-brown: #411f13;
+$brand-orange: #f5833b;
+$brand-yellow: #fcd87a;
+
+
+// font awesome path
 $fa-font-path: '../js/lib/font-awesome/fonts';
+
+// bootsrap overrides
+$navbar-inverse-bg: #411f13;
+$navbar-inverse-color: #f5833b;
+$navbar-inverse-link-color: lighten($navbar-inverse-color,10%);
+
+$navbar-inverse-toggle-hover-bg: $brand-brown;
+$navbar-inverse-toggle-icon-bar-bg: $brand-brown;
+$navbar-inverse-toggle-border-color: transparent;
+
+$jumbotron-bg: lighten(#fcd87a,20%);
