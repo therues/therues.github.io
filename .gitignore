@@ -1,0 +1,6 @@
+# node defaults
+node_modules
+npm-debug.log
+
+# max os x
+.DS_Store
