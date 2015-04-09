@@ -1,0 +1,20 @@
+{
+  "name": "frankrue.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Frank Rue <frankrue@gmail.com>",
+  "repository": "git@guthub.com:frankrue/frankrue.github.io.git",
+  "description": "Public website for Frank Rue",
+  "contributors": [
+    {
+      "name": "Frank Rue",
+      "email": "frankrue@gmail.com"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "",
+    "gulp-connect": "",
+    "gulp-sass": "",
+    "tiny-lr": ""
+  }
+}

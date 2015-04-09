@@ -1,0 +1,10 @@
+{
+  "name": "frankrue.github.io",
+  "dependencies": {
+    "requirejs": "",
+    "jquery": "",
+    "gsap": "",
+    "bootstrap-sass-official": "",
+    "font-awesome": "~4.3.0"
+  }
+}
