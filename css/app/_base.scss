@@ -14,3 +14,10 @@ h1, h2, h3, h4, h5 {
 .text-white {
   color: white;
 }
+
+a {
+  color: $brand-orange;
+  &:hover, &.focus, &:focus {
+    color: $brand-orange;
+  }
+}

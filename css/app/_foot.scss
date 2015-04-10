@@ -2,9 +2,21 @@ body > footer {
   background: $brand-brown;
   padding: 15px 0;
   box-shadow: inset 0 15px 15px -15px darken($brand-brown,10%);
-  p {
-    font-size: 0.8em;
-    color: lighten($brand-brown,20%);
-    margin: 0;
+  font-size: 0.8em;
+  color: lighten($brand-brown,20%);
+  .container {
+    @include clearfix();
+  }
+  a {
+    color: lighten($brand-brown,30%);
+    span.fa {
+      font-size: 0.8em;
+      margin-left: 6px;
+    }
+  }
+  .contact {
+    @media (min-width: $screen-sm-min) {
+      text-align: right;
+    }
   }
 }
