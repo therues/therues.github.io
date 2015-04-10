@@ -1,0 +1,104 @@
+.carousel {
+  margin: 0 -15px;
+  .carousel-inner {
+    .item {
+      height: 580px;
+      @include gradient-radial(#5b7f95,#18252c);
+      .container {
+        padding-top: 30px;
+        position: relative;
+        -webkit-perspective: 1500px;
+        perspective: 1500px;
+        height: 100%;
+        img {
+          display: block;
+          max-width: 80%;
+          margin: 0 auto 30px auto;
+          box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+        .carousel-caption {
+          position: static;
+          padding: 0 30px;
+          text-align: center;
+          h3 {
+            color: white;
+          }
+          a {
+            font-weight: 700;
+            color: white;
+            opacity: 0.8;
+            &:hover {
+              opacity: 1;
+            }
+            span {
+              font-size: 0.7em;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+      &.gradient-red {
+        @include gradient-radial(#ee463d,#621d19);
+      }
+      &.gradient-brown {
+        @include gradient-radial(#cc9460,#3c1c17);
+      }
+      &.gradient-blue-green {
+        @include gradient-radial(#5e9c37,#33551e);
+      }
+      &.gradient-teal {
+        @include gradient-radial(#2c8688,#113536);
+      }
+      &.gradient-orange {
+        @include gradient-radial(#e14c00,#9a0000);
+      }
+      @media (min-width: $screen-sm-min) {
+        height: 450px;
+        .container {
+          padding-top: 0;
+          img {
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            right: 60px;
+            margin: -113px 0 0 0;
+            -webkit-transform-origin: right center;
+            transform-origin: right center;
+            -webkit-transform: rotateY(-30deg) rotateZ(1deg);
+            transform: rotateY(-30deg) rotateZ(1deg);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+          }
+          .carousel-caption {
+            position: absolute;
+            top: 50%;
+            bottom: auto;
+            right: 400px;
+            left: 30px;
+            padding: 0;
+            text-align: right;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+        }
+      }
+      @media (min-width: $screen-md-min) {
+        height: 300px;
+      }
+    }
+  }
+  .carousel-control {
+    width: 30px;
+    span {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    &.right {
+      span {
+        left: auto;
+        right: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+body > footer {
+  background: $brand-brown;
+  padding: 15px 0;
+  box-shadow: inset 0 15px 15px -15px darken($brand-brown,10%);
+  p {
+    font-size: 0.8em;
+    color: lighten($brand-brown,20%);
+    margin: 0;
+  }
+}

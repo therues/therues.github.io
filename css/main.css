@@ -6981,20 +6981,27 @@ body {
   padding-top: 50px;
   font-family: "rooney-sans", sans-serif;
   font-weight: 300;
+  color: #68321f;
+  -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "abril-display", serif;
   color: #68321f; }
+
+.text-white {
+  color: white; }
 
 .navbar-brand {
   font-weight: 700;
   background: url(../i/theruesmark.svg) no-repeat 15px 50%;
   background-size: auto 25px;
   width: 200px; }
-  @media (min-width: 768px) {
-    .navbar-brand {
-      background-position: 30px 50%; } }
 
-.navbar-nav span.fa {
-  font-size: 0.7em;
-  margin-left: 3px; }
+.navbar-nav {
+  margin-right: -15px; }
+  .navbar-nav span.fa {
+    font-size: 0.7em;
+    margin-left: 3px; }
 
 .navbar-toggle {
   color: #f5833b; }
@@ -7007,6 +7014,9 @@ body {
     border-bottom: 1px dotted black;
     margin-bottom: 0.5em;
     color: #900; }
+
+#philosophy {
+  padding-top: 15px; }
 
 .snipe {
   text-align: center;
@@ -7022,6 +7032,8 @@ body {
     color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
     text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25); }
+  .snipe h2 {
+    text-align: center; }
   .snipe p, .snipe blockquote {
     text-align: left; }
   .snipe > p {
@@ -7043,12 +7055,104 @@ body {
   .snipe.snipe-green blockquote footer {
     color: #900; }
 
-h2 {
-  text-align: center; }
+body > footer {
+  background: #411f13;
+  padding: 15px 0;
+  box-shadow: inset 0 15px 15px -15px #1a0c07; }
+  body > footer p {
+    font-size: 0.8em;
+    color: #90452a;
+    margin: 0; }
 
-h1, h2, h3, h4, h5 {
-  font-family: "abril-display", serif;
-  color: #68321f; }
-
-.text-white {
-  color: white; }
+.carousel {
+  margin: 0 -15px; }
+  .carousel .carousel-inner .item {
+    height: 580px;
+    background-image: -webkit-radial-gradient(circle, #5b7f95, #18252c);
+    background-image: radial-gradient(circle, #5b7f95, #18252c);
+    background-repeat: no-repeat; }
+    .carousel .carousel-inner .item .container {
+      padding-top: 30px;
+      position: relative;
+      -webkit-perspective: 1500px;
+      perspective: 1500px;
+      height: 100%; }
+      .carousel .carousel-inner .item .container img {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto 30px auto;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+      .carousel .carousel-inner .item .container .carousel-caption {
+        position: static;
+        padding: 0 30px;
+        text-align: center; }
+        .carousel .carousel-inner .item .container .carousel-caption h3 {
+          color: white; }
+        .carousel .carousel-inner .item .container .carousel-caption a {
+          font-weight: 700;
+          color: white;
+          opacity: 0.8; }
+          .carousel .carousel-inner .item .container .carousel-caption a:hover {
+            opacity: 1; }
+          .carousel .carousel-inner .item .container .carousel-caption a span {
+            font-size: 0.7em;
+            margin-right: 6px; }
+    .carousel .carousel-inner .item.gradient-red {
+      background-image: -webkit-radial-gradient(circle, #ee463d, #621d19);
+      background-image: radial-gradient(circle, #ee463d, #621d19);
+      background-repeat: no-repeat; }
+    .carousel .carousel-inner .item.gradient-brown {
+      background-image: -webkit-radial-gradient(circle, #cc9460, #3c1c17);
+      background-image: radial-gradient(circle, #cc9460, #3c1c17);
+      background-repeat: no-repeat; }
+    .carousel .carousel-inner .item.gradient-blue-green {
+      background-image: -webkit-radial-gradient(circle, #5e9c37, #33551e);
+      background-image: radial-gradient(circle, #5e9c37, #33551e);
+      background-repeat: no-repeat; }
+    .carousel .carousel-inner .item.gradient-teal {
+      background-image: -webkit-radial-gradient(circle, #2c8688, #113536);
+      background-image: radial-gradient(circle, #2c8688, #113536);
+      background-repeat: no-repeat; }
+    .carousel .carousel-inner .item.gradient-orange {
+      background-image: -webkit-radial-gradient(circle, #e14c00, #9a0000);
+      background-image: radial-gradient(circle, #e14c00, #9a0000);
+      background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      .carousel .carousel-inner .item {
+        height: 450px; }
+        .carousel .carousel-inner .item .container {
+          padding-top: 0; }
+          .carousel .carousel-inner .item .container img {
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            right: 60px;
+            margin: -113px 0 0 0;
+            -webkit-transform-origin: right center;
+            transform-origin: right center;
+            -webkit-transform: rotateY(-30deg) rotateZ(1deg);
+            transform: rotateY(-30deg) rotateZ(1deg);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); }
+          .carousel .carousel-inner .item .container .carousel-caption {
+            position: absolute;
+            top: 50%;
+            bottom: auto;
+            right: 400px;
+            left: 30px;
+            padding: 0;
+            text-align: right;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); } }
+    @media (min-width: 992px) {
+      .carousel .carousel-inner .item {
+        height: 300px; } }
+  .carousel .carousel-control {
+    width: 30px; }
+    .carousel .carousel-control span {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      margin-top: -10px; }
+    .carousel .carousel-control.right span {
+      left: auto;
+      right: 15px; }
