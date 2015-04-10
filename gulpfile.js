@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var connect = require('gulp-connect');
+var rsync = require('gulp-rsync');
 
 var tinylr;
 var server = {
@@ -52,6 +53,16 @@ gulp.task('sassdist', function() {
     sourceComments: false
   }))
   .pipe(gulp.dest('css/'));
+});
+
+// deploy to server
+gulp.task('rsync', function() {
+  return gulp.src(['index.html','css/main.css','i/**/*','js/**/*'])
+    .pipe(rsync({
+      root: '.',
+      hostname: 'rack01',
+      destination: '/home/frue/sites/therues.com/html/'
+    }));
 });
 
 gulp.task('default', ['livereload', 'sass', 'watch', 'connect']);
