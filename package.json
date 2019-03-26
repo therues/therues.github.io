@@ -14,7 +14,7 @@
   "devDependencies": {
     "gulp": "",
     "gulp-connect": "",
-    "gulp-rsync": "0.0.5",
+    "gulp-rsync": "",
     "gulp-sass": "",
     "tiny-lr": ""
   }
